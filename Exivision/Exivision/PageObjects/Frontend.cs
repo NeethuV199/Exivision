@@ -91,7 +91,7 @@ namespace Exivision.PageObjects
 
         #region Delenit Augue Duis
         //Delenit Augue Duis from frontend
-        public string delenit_class = "banenr-btn";
+        public string delenitcss = "delenit_class";
         #endregion
 
         #region Konecranes(header)
