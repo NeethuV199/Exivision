@@ -18,6 +18,5 @@ D:\Exivision-SourceCode\Exivision\Exivision\bin\Debug\Selenium.WebDriverBackedSe
 D:\Exivision-SourceCode\Exivision\Exivision\bin\Debug\ThoughtWorks.Selenium.Core.xml
 D:\Exivision-SourceCode\Exivision\Exivision\bin\Debug\WebDriver.xml
 D:\Exivision-SourceCode\Exivision\Exivision\bin\Debug\WebDriver.Support.xml
-D:\Exivision-SourceCode\Exivision\Exivision\obj\Debug\Exivision.csprojResolveAssemblyReference.cache
 D:\Exivision-SourceCode\Exivision\Exivision\obj\Debug\Exivision.dll
 D:\Exivision-SourceCode\Exivision\Exivision\obj\Debug\Exivision.pdb
