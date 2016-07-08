@@ -38,7 +38,7 @@ namespace Exivision.SourceCode
             }
             else
             {
-                WaitForTextPresent(eng);
+                //WaitForTextPresent(eng);
             }
         }
 
