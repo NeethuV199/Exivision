@@ -1,25 +1,26 @@
 ﻿
-using System;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+using Exivision.SourceCode;
+using System;
 using Exivision.PageObjects;
+using OpenQA.Selenium.Support.UI;
 
 namespace Exivision.SourceCode
 {
-    class Login
+    public class Login : Main
     {
-        public object driver;
-        private WebDriverWait wait;
-
-        public object ExpectedConditions { get; private set; }
-
-        public void DelenitAugueDuis()
+        public Login(IWebDriver Obj)
         {
-           //wait = new WebDriverWait(driver, new TimeSpan(50));
-           wait.Until.ExpectedConditions.el(By.CssSelector(FrontEnd.delenitcss)).click();
-           
+            driver = Obj;
         }
-    }
-
-    
+        public Login()
+        {
+            
+        }
+        public void delenit()
+        {
+            //wait.Until(ExpectedConditions.ElementIsVisible(By.LinkText(FrontEnd.delenitlink)));
+            driver.FindElement(By.LinkText("DELENIT AUGUE DUIS")).Click();
+        }
+}
 }

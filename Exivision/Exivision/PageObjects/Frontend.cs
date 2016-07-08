@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Exivision.SourceCode;
 
 namespace Exivision.PageObjects
 {
-    class FrontEnd
+    public class FrontEnd
     {
-        #region Header
 
         #region Signin
         //Signin elements
@@ -90,8 +90,11 @@ namespace Exivision.PageObjects
         #endregion
 
         #region Delenit Augue Duis
+
         //Delenit Augue Duis from frontend
-        public string delenitcss = "delenit_class";
+
+        public string delenitlink = "DELENIT AUGUE DUIS";  //linkText
+
         #endregion
 
         #region Konecranes(header)
@@ -102,8 +105,6 @@ namespace Exivision.PageObjects
         #region Konecranes(footer)
         //Konecranes(footer) from frontend
         public string konecranesfooter_src = "/images/konecranes_logo_white.png";
-        #endregion
-
         #endregion
     }
 }
