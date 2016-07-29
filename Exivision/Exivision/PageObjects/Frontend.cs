@@ -64,12 +64,12 @@ namespace Exivision.PageObjects
         #endregion
 
         #region Courses
-        //CoursesLink from Frontend
-        public string Course_Technical = "/Home/TechnicalTraining";
-        public string Course_SystemTraining = "/Home/SystemTraining";
-        public string Course_hrefSystemTraining = "Home/ProductTraining";
-        public string Course_hrefOperatorTraining = "/Home/OperatorTraining";
-        public string Course_hrefEcoDrivingTraining = "/Home/EcoDriving";
+        //Courses from Frontend
+        public string Course_Technical = "//a[contains(text(),'COURSES')]"; //XPATH
+        public string Course_SystemTraining = "//a[contains(text(),'SYSTEM TRAINING')]";    //XPATH
+        public string Course_ProductTraining = "//a[contains(text(),'PRODUCT TRAINING')]";   //XPATH
+        public string Course_OperatorTraining = "//a[contains(text(),'OPERATOR TRAINING')]";    //XPATH
+        public string Course_EcoDrivingTraining = "//a[contains(text(), 'ECODRIVING')]";    //XPATH
         #endregion
 
         #region Contact
@@ -93,18 +93,18 @@ namespace Exivision.PageObjects
 
         //Delenit Augue Duis from frontend
 
-        public string delenitlink = "DELENIT AUGUE DUIS";  //linkText
+        public string delenit = "READ MORE";  //linkText
 
         #endregion
 
         #region Konecranes(header)
         //Konecranes(header) from frontend
-        public string konecranesHeader_src = "/images/logo.jpg";
+        public string KonecranesHead = "img.img-responsive";  //css selector
         #endregion
 
         #region Konecranes(footer)
         //Konecranes(footer) from frontend
-        public string konecranesfooter_src = "/images/konecranes_logo_white.png";
+        public string konecranesfooter = "//img[@alt='Logo']"; //xpath
         #endregion
     }
 }

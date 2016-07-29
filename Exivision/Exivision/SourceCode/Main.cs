@@ -12,6 +12,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 using Exivision.PageObjects;
+using Exivision.SourceCode;
 
 namespace Exivision.SourceCode
 {
@@ -20,17 +21,16 @@ namespace Exivision.SourceCode
         public IWebDriver driver;
         public WebDriverWait wait;
         public FrontEnd FrontEnd = new FrontEnd();
-        public StringBuilder verificationErrors;
         public string baseURL;
 
         public void SetUp()
         {
             driver = new FirefoxDriver();
+            driver. Manage().Window.Maximize();
             baseURL = "http://dev.exivision.info/";
-           // verificationErrors = new StringBuilder();
         }
 
-        public void WaitForTextInDiffLang(string eng, string swe)
+     /*   public void WaitForTextInDiffLang(string eng, string swe)
         {
             if (driver.FindElement(By.XPath("//a[@href='/Home/Contact']")).Text == "KONTAKT")
             {
@@ -40,11 +40,11 @@ namespace Exivision.SourceCode
             {
                 WaitForTextPresent(eng);
             }
-        }
+        }*/
 
 
 
-        public void WaitForTextPresent(String text)
+    /*    public void WaitForTextPresent(String text)
         {
             try
             {
@@ -94,8 +94,14 @@ namespace Exivision.SourceCode
             {
                 return false;
             }
+        }*/
+
+
+        public void WaitForPageLoad(double timeOut)
+        {
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromMilliseconds(timeOut));
         }
 
-
     }
+
 }

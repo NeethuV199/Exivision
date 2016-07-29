@@ -20,3 +20,4 @@ D:\Exivision-SourceCode\Exivision\Exivision\bin\Debug\WebDriver.xml
 D:\Exivision-SourceCode\Exivision\Exivision\bin\Debug\WebDriver.Support.xml
 D:\Exivision-SourceCode\Exivision\Exivision\obj\Debug\Exivision.dll
 D:\Exivision-SourceCode\Exivision\Exivision\obj\Debug\Exivision.pdb
+D:\Exivision-SourceCode\Exivision\Exivision\obj\Debug\Exivision.csprojResolveAssemblyReference.cache

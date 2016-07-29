@@ -107,8 +107,8 @@
     <Compile Include="PageObjects\Admin.cs" />
     <Compile Include="PageObjects\FrontEnd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SourceCode\Login.cs" />
-    <Compile Include="SourceCode\LoginTest.cs" />
+    <Compile Include="SourceCode\Front.cs" />
+    <Compile Include="SourceCode\FrontTest.cs" />
     <Compile Include="SourceCode\Main.cs" />
   </ItemGroup>
   <ItemGroup>
