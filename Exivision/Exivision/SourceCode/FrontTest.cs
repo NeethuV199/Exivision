@@ -36,6 +36,12 @@ namespace Exivision.SourceCode
             ProductTrainingCourse();
             OperatorTrainingCourse();
             EcoDriving();
+           
+            //CONTACT FROM FRONTSCREEN
+            ContactFromFrontscreen();
+
+            //LIFT TRUCK ACADEMY FROM FRONTSCREEN
+            LifttruckAcademyFromFrontscreen();
             driver.Close();
             #endregion
         }

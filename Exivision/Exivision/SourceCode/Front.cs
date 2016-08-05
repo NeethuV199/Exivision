@@ -63,6 +63,29 @@ namespace Exivision.SourceCode
             wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(FrontEnd.Course_EcoDrivingTraining)));
             driver.FindElement(By.XPath(FrontEnd.Course_EcoDrivingTraining)).Click();
         }
+
+        #endregion
+
+        #region
+        // CONTACT FROM FRONTSCREEN
+
+        public void ContactFromFrontscreen()
+        {
+            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(FrontEnd.Contact_FRONTSCREEN)));
+            driver.FindElement(By.XPath(FrontEnd.Contact_FRONTSCREEN)).Click();
+        }
+
+        #endregion
+
+        #region
+
+        //LIFT TRUCK ACADEMY FROM FRONTSCREEN
+        public void LifttruckAcademyFromFrontscreen()
+        {
+            wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(FrontEnd.LiftTruckAcademy_FRONTEND)));
+            driver.FindElement(By.XPath(FrontEnd.LiftTruckAcademy_FRONTEND)).Click();
+        }
+
         #endregion
     }
 }

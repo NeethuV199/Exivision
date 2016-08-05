@@ -65,7 +65,7 @@ namespace Exivision.PageObjects
 
         #region Courses
         //Courses from Frontend
-        public string Course_Technical = "//a[contains(text(),'COURSES')]"; //XPATH
+        public string Course_Technical = "//a[contains(text(),'COURSES')]"; //XPATH //a[contains(text(),'Technical Training')]
         public string Course_SystemTraining = "//a[contains(text(),'SYSTEM TRAINING')]";    //XPATH
         public string Course_ProductTraining = "//a[contains(text(),'PRODUCT TRAINING')]";   //XPATH
         public string Course_OperatorTraining = "//a[contains(text(),'OPERATOR TRAINING')]";    //XPATH
@@ -74,12 +74,12 @@ namespace Exivision.PageObjects
 
         #region Contact
         //Contact from frontend
-        public string Contact_hrefContactlink = "/Home/Contact";
+        public string Contact_FRONTSCREEN = "//a[contains(text(),'CONTACT')]";    //XPATH
         #endregion
 
         #region Lift Truck Academy
         //Lift Truck Academy From Frontend
-        public string LiftTruckAcademy_href = "LIFT TRUCK ACADEMY";
+        public string LiftTruckAcademy_FRONTEND = "//a[contains(text(), 'LIFT TRUCK ACADEMY')]";    //XPATH
         #endregion
 
         #region About
@@ -104,7 +104,14 @@ namespace Exivision.PageObjects
 
         #region Konecranes(footer)
         //Konecranes(footer) from frontend
-        public string konecranesfooter = "//img[@alt='Logo']"; //xpath
+        public string Courses_TechnicalTraining_Footer = "//a[contains(text(), 'Technical Training')]"; //xpath
+        public string Courses_SystemTraining_Footer = "//a[contains(text(), 'System Training')]";   //xpath
+        public string Courses_ProductTraining_Footer = "//a[contains(text(), 'Product Training')]"; //xpath
+        public string Courses_OperatorTraining_Footer = "//a[contains(text(), 'Operator Training')]";   //xpath
+        public string Courses_EcoDriving_Footer = "//a[contains(text(), 'EcoDriving')]";    //xpath
+
+
+        public string konecranes_footer = "//div/a/img";     //xpath
         #endregion
     }
 }
